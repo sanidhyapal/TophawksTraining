@@ -38,7 +38,7 @@ ViewPager viewPager;
             }
         });
         Firebase.setAndroidContext(this);
-        final Bundle extras=getIntent().getExtras();
+        Bundle extras=getIntent().getExtras();
         childl= extras.getString("child");
         viewPager=(ViewPager)findViewById(R.id.view_pager);
         slides=new ArrayList<>();

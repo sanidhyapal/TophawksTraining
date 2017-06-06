@@ -72,8 +72,9 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         FirebaseAuth auth;
         auth = FirebaseAuth.getInstance();
-        final FirebaseUser user = auth.getCurrentUser();
         uploads = new ArrayList<>();
+        final FirebaseUser user = auth.getCurrentUser();
+
         //displaying progress dialog while fetching images
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Loading...");
